@@ -29,7 +29,8 @@ public class EmployeeServlet extends HttpServlet {
 		request.setAttribute("emp_names", employee_names);
 		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/jsp/employeeArray.jsp");
 		rd.forward(request, response);
-	}
+		
+	}// Get 
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
